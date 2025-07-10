@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule Tracker</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<header data-aos="fade-down">
+  <h1>📅 My Schedule Tracker</h1>
+</header>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>📅 My Schedule Tracker</h1>
+      <p id="datetime"></p>
+    </header>
+
+    <section class="task-input">
+      <input type="text" id="task" placeholder="Enter your task...">
+      <input type="datetime-local" id="datetime-input">
+      <button onclick="addTask()">Add Task</button>
+    </section>
+
+    <section class="task-list">
+      <h2>⏳ Upcoming Tasks</h2>
+      <ul id="taskList"></ul>
+    </section>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
